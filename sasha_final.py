@@ -1,12 +1,12 @@
-#                         <3 Sara + Aisha = SASHA <3
+#             <3 Sara + Aisha = SASHA <3
 
 import random
 
-beneficial_enteries = [ "Glucose", "Oxygen","Vitamin D","Vitamin C","Protiens","Carbohydrates","Minerals"]
+beneficial_enteries = [ "Glucose", "Oxygen","Vitamin D","Vitamin C","Proteins","Carbohydrates","Minerals"]
 
 harmful_enteries =  ["COVID-19","Carbon Monoxide","HIV","Influenza","Chickenpox","Marburg Virus","Ebola" ]
 
-print("Welcome to Sasha's Immune System Challenge level 1 has being selected.")
+print("Welcome to Sasha's Immune System Challenge level 1 has been selected.")
 
 def entry_picker(types):
     x = random.randint(0,6)
@@ -23,7 +23,7 @@ while True:
     entry_name = input("Choose the correct beneficial entry")
 
     if entry_name in beneficial_enteries:
-        print("Welcome "+ entry_name + ",to Sasha's immune system! Stay safe <3")
+        print("Welcome "+ entry_name + " to Sasha's immune system! Stay safe <3")
         final_score = score + 1
         break
 
@@ -34,9 +34,9 @@ while True:
     if entry_name == "exit":
         break
 
-print("The final score is: " + str(final_score))
+# print("The final score is " + str(final_score))
 
-print("Challenge level 2 has being selected.")
+print("Challenge level 2 has been selected.")
 
 def entry_picker(types):
     x = random.randint(0,6)
@@ -62,7 +62,14 @@ while True:
     if entry_name == "exit":
         break
 
-print("The final score is: " + str(score))
+print("The final score is " + str(score))
+
+if score <2:
+    print("You only got" +str(score) + "marks, See if you can do better")
+
+elif score > 1:
+        print("PERFECT SCORE! you got " +str(score) + " out of 2!")
+
 
 
 
